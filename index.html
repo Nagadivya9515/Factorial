@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tailwind Custom Color Test</title>
+  <link href="./dist/output.css" rel="stylesheet" />
+</head>
+<body>
+<div class="bg-soft-red p-6 w-[424px] h-[416px] shadow-md rounded-2xl mx-auto mt-6">
+  <div class="bg-black rounded-xl text-center p-2 w-[70%] mx-auto">
+    <h1 class="text-white font-bold text-[22px]">
+        Factorial Calculation
+    </h1>
+  </div><br>
+  <p class="text-[16px] text-center">n! = ?</p><br>
+    <div class="flex justify-center items-center">
+        <p class="text-[16px] text-center">n = &nbsp;</p>
+        <div class="border-2 border-black bg-white rounded-md w-[74px]">
+            <input type="text" id="inputNumber" class="w-full outline-none border-none bg-transparent pl-1 placeholder-opacity-50"/>
+        </div>
+    </div>
+    <br>
+    <div class="flex justify-around items-center">
+        <div class="bg-black rounded-md px-2 border-2 border-black py-1 text-white text-center hover:bg-white hover:text-black hover:border-black transition duration-[300ms]">
+            <button onclick="clearInput()">Clear</button>
+        </div>
+        <div class="bg-black rounded-md px-2 border-2 border-black py-1 text-white text-center hover:bg-white hover:text-black hover:border-black transition duration-[300ms]">
+            <button onclick="factorial()">Calculate</button>
+        </div>
+    </div><br>
+    <div class="border-black border-2 rounded-lg h-[50px] mx-12 bg-white text-gray-400 pl-2">
+        Answer&nbsp;<span id="dynamicContent">here :</span>
+    </div>
+    <br>
+    <p class="text-right mr-12">@factorialPanda</p>
+</div>
+<script src="factorial.js"></script>
+</body>
+</html>
